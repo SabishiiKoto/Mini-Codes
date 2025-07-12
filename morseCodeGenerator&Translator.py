@@ -1,6 +1,6 @@
-#
-#
-#
+# File Title: Morse code Generator and Translator
+# Feature: Generate Text to Morse code or translate Morse code to Text
+
 
 print("___Morse Code Generator and Translator___")
 
