@@ -1,6 +1,12 @@
 
 # File Title: Metric Conversion
 # Feature: Given 3 types of conversion and convert the given unit to the selected unit.
+# How To Run and Use: 
+# 1. Run the file (download the file first I guess?)
+# 2. Select the unit (temperature, length, weight)
+# 3. Select the type to convert (temperature) or unit type of the input (length & weight)
+# 4. Type the input number
+# 5. (For length & weight) Select the unit type of the output
 
 
 print("___Metric Conversion___")
