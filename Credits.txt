@@ -1,0 +1,7 @@
+Credits list
+
+Ideas:
+1. Codedex: https://www.codedex.io/projects/50-terminal-project-ideas-using-python
+2. https://seostudio.tools/
+
+Note: The ideas may not be mine, but I coded it myself T.T
