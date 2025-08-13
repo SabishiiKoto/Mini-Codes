@@ -43,6 +43,7 @@ try:
         base = float (input("Enter the base of the trapezoid (number only): "))
         length = float(input("Enter the parallel side of the base (number only):  "))
         area = ((base * length)/2) * height
+    print("\n--Result--")
     print("{:.4f} unit²".format(area))
     
 except ValueError:

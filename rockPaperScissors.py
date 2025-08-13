@@ -3,8 +3,8 @@ import random as rd
 # File title: Rock, Paper, Scissors
 # Feature: Generate random item to play rock, paper, scissors
 
-data = ["rock", "paper", "scissors"]
-dataMap = {"1": "rock", "2": "paper", "3": "scissors"}
+data = ["ROCK", "PAPER", "SCISSORS"]
+dataMap = {"1": "ROCK", "2": "PAPER", "3": "SCISSORS"}
 
 
 def randomChoice():
@@ -32,11 +32,12 @@ while (choice != "STOP"):
 2. Paper
 3. Scissors
 OR 'STOP' to leave the game.
-You pick a number: 
-    """)
+You pick a number: """)
     else:
         randomItem = randomChoice()
         choiceResult = searchChoide(choice)
+        
+        print("\n--Result--")
         print("You picked " + choiceResult)
         print("I picked " + randomItem)
         if (choice == "1"):  # rock
