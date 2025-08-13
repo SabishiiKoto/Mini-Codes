@@ -129,33 +129,33 @@ try:
         if (inputUnit == outputUnit):
             print("Your result is {:.4f} {}".format(inputWeight, weightData[inputUnit - 1]))
         else:
-            if (inputUnit == 1): # kg to g
+            if (inputUnit == 2): # kg to g
                 inputWeight = inputWeight * 1000
-            elif (inputUnit == 2): # mcg to g
+            elif (inputUnit == 3): # mcg to g
                 inputWeight = inputWeight / 1000000
-            elif (inputUnit == 3): # mg to g
+            elif (inputUnit == 4): # mg to g
                 inputWeight = inputWeight / 1000
-            elif (inputUnit == 4): # ounce to g
+            elif (inputUnit == 5): # ounce to g
                 inputWeight = inputWeight * 28.3495231
-            elif (inputUnit == 5): # pound to g
+            elif (inputUnit == 6): # pound to g
                 inputWeight = inputWeight * 453.59237
-            elif (inputUnit == 6): # tonne to g
+            elif (inputUnit == 7): # tonne to g
                 inputWeight = inputWeight * 1000000
                 
             outputWeight = 0
-            if (outputUnit == 0): # g to g
+            if (outputUnit == 1): # g to g
                 outputWeight = inputWeight
-            elif (outputUnit == 1): # g to kg
+            elif (outputUnit == 2): # g to kg
                 outputWeight = inputWeight / 1000
-            elif (outputUnit == 2): # g to mcg
+            elif (outputUnit == 3): # g to mcg
                 outputWeight = inputWeight * 1000000
-            elif (outputUnit == 3): # g to mg
+            elif (outputUnit == 4): # g to mg
                 outputWeight = inputWeight * 1000
-            elif (outputUnit == 4): # g to ounce
+            elif (outputUnit == 5): # g to ounce
                 outputWeight = inputWeight / 28.3495231
-            elif (outputUnit == 5): # g to pound
+            elif (outputUnit == 6): # g to pound
                 outputWeight = inputWeight / 453.59237
-            elif (outputUnit == 6): # g to tonne
+            elif (outputUnit == 7): # g to tonne
                 outputWeight = inputWeight / 1000000
             print("Your result is {:.4f} {}".format(outputWeight, weightData[outputUnit - 1]))
         
