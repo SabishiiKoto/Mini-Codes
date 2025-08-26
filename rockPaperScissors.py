@@ -15,15 +15,13 @@ def searchChoide(number: str):
     return dataMap.get(number)
 
 print("___Rock, Paper, Scissors Game___")
-print("Pick a number to play when get asked!")
-print("Input 'STOP' to leave the game!")
 choice = input("""
+\tSELECT CHOICE
 1. Rock
 2. Paper
 3. Scissors
 OR 'STOP' to leave the game.
-You pick a number: 
-""")
+You pick a number: """)
 while (choice != "STOP"):
     if (not ("1" <= choice <= "3")):
         print("Choice is not valid! Please input again")
@@ -41,36 +39,32 @@ You pick a number: """)
         print("You picked " + choiceResult)
         print("I picked " + randomItem)
         if (choice == "1"):  # rock
-            if (randomItem == "rock"):
+            if (randomItem == "ROCK"):
                 print("Game is tie")
-            elif (randomItem == "paper"):
+            elif (randomItem == "PAPER"):
                 print("I win the game. Game over!")
             else:
                 print("You win the game. I dare you to play again!")
 
         elif (choice == "2"):
-            if (randomItem == "rock"):
+            if (randomItem == "ROCK"):
                 print("You win the game. I dare you to play again!")
-            elif (randomItem == "paper"):
+            elif (randomItem == "PAPER"):
                 print("Game is tie")
             else:
                 print("I win the game. Game over!")
         else:
-            if (randomItem == "rock"):
+            if (randomItem == "ROCK"):
                 print("I win the game. Game over!")
-            elif (randomItem == "paper"):
+            elif (randomItem == "PAPER"):
                 print("You win the game. I dare you to play again!")
             else:
                 print("Game is tie")
-        print("\n___Play Again?___")
-        again = input("YES (Y) / NO (N): ")
-        if (again == "YES" or again == "yes" or again == "Y" or again == "y"):
-            choice = input("""
+        choice = input("""
+\tSELECT CHOICE
 1. Rock
 2. Paper
 3. Scissors
 OR 'STOP' to leave the game.
-You pick a number: 
-""")
-        else:
-            break
+You pick a number: """)
+    
