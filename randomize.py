@@ -7,11 +7,15 @@ import os
 import time
 
 print("___Random Picker___")
+loop = 0
 try:
     loop = int(input("Enter number of options: "))
 except ValueError:
     print("Input error.")
+    
 lst = []
+history = []
+
 for i in range(loop):
     item = input("Enter option {}: ".format(i + 1))
     lst.append(item)
@@ -26,9 +30,11 @@ while again:
             print("CHOSEN OPTION: {}".format(chosenOption))
             time.sleep(0.2)
     else:
+        os.system('cls' if os.name == 'nt' else 'clear')
         chosenOption = lst[0]
         print("CHOSEN OPTION: {}".format(lst[0]))
 
+    history.append(chosenOption)
     lst.remove(chosenOption)
 
     if len(lst) == 0:
@@ -41,4 +47,10 @@ while again:
         else:
             again = True
 
-print("\nEnd of program.")
+i = 1
+print("\n--Pick History--")
+for item in history:
+    print("{}. {}".format(i,item))
+    i += 1
+    
+print("End of program.\n")
