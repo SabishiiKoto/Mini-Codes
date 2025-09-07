@@ -33,6 +33,7 @@ while again:
         os.system('cls' if os.name == 'nt' else 'clear')
         chosenOption = lst[0]
         print("CHOSEN OPTION: {}".format(lst[0]))
+        time.sleep(1)
 
     history.append(chosenOption)
     lst.remove(chosenOption)
